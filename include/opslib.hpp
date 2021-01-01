@@ -19,9 +19,13 @@ namespace orb {
     bool orb::init_OPSLIB_API(string orb_path)
     
     :param orb_path(string) 指定Orb安装目录
-    :return bool
     */
     bool init_OPSLIB(std::string orb_path);
+
+    /*获取初始化失败的ERROR
+    string orb::get_initErrorInfo(void)
+    */
+   string get_initErrorInfo(void);
 } // namespace orb
 
 

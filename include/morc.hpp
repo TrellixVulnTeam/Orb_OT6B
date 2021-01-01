@@ -24,7 +24,7 @@ Version Notes
 
 namespace morc {
     typedef struct MORC_HANDLE {
-        ;
+        std::string sKEY;
     };
 } // namespace morc
 

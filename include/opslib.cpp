@@ -18,8 +18,15 @@ using namespace std;
 bool orb::init_OPSLIB(string orb_path) {
     /*
     判断morc是否启动
-    然后连接
+    然后获取令牌
     */
    return true;
+}
+
+string orb::get_initErrorInfo(void) {
+    /*
+    然后连接errorlog后
+    */
+   return "";
 }
 
