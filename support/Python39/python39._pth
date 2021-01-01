@@ -1,0 +1,10 @@
+.
+.\DLLs\
+.\Lib\
+.\Lib\site-packages
+
+# orb
+.\..\..\
+
+# Uncomment to run site.main() automatically
+# impoer site
