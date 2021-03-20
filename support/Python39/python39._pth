@@ -4,7 +4,15 @@
 .\Lib\site-packages
 
 # orb
+
+# root
 .\..\..\
+
+# include path
+.\..\..\include
+
+#include path/ installer
+.\..\..\include\python
 
 # Uncomment to run site.main() automatically
 # impoer site

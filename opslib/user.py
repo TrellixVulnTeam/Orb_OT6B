@@ -1,7 +1,9 @@
 """
-From CPython StdLib 2.7.15 user.py
+From CPython StdLib 2.7.15 user.py -> copy to Python 3.x
 
-version
+Version Notes
+    2.1
+        line:49: IOError -> FileNotFoundError
     2.0
         run `~/.pythonrc.py` as user.py runs
     1.1
@@ -9,7 +11,7 @@ version
     1.0
         Copy from python
 """
-__version__ = "2.0"
+__version__ = "2.1"
 __all__ = ["home", "pythonrc"]
 
 import os
@@ -44,7 +46,7 @@ elif os.name == "nt":
 pythonrc = os.path.join(home, ".pythonrc.py")
 try:
     fp = open(pythonrc, "rb")
-except IOError:
+except FileNotFoundError:
     pythonrc = None
 else:
     try:
