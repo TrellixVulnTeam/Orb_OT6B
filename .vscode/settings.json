@@ -78,6 +78,6 @@
         "valarray": "cpp",
         "variant": "cpp"
     },
-    "python.pythonPath": "C:\\Python39\\python.exe",
+    "python.pythonPath": "C:\\Python38\\python.exe",
     "git.ignoreLimitWarning": true
 }

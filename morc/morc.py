@@ -9,10 +9,7 @@ Version
     1.0.0
         First Commit
 '''
-__date__ = ''
-
-from core import MORC
 from sys import exit
+from core import *
 
-morc = MORC()
-morc.loop()
+
