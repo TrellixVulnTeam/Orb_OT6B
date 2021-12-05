@@ -57,12 +57,17 @@ class vfilestream():
         return self.flagClosed
 
     def save(self) -> bool:
+        '''
+        pass IOError except PermissionError
+        '''
         self.flush()
         try:
             fp = open(self.vfilename, mode=self.savemode, encoding=self.encoding)
             fp.write(self.data)
-        except (IOError, PermissionError):
+        except IOError:
             return False
+        #except PermissionError,e:
+        #    pass
         else:
             return True
 
